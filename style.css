@@ -1,0 +1,182 @@
+
+body{
+    font-family: "Roboto",sans-serif;
+    margin: 0;
+}
+
+.primary-color{
+    color:#F58700;
+}
+
+.primary-color:hover{
+    color:#FFFFFF;
+    transition-duration: 0.3s;
+}
+
+.container{
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+} 
+
+header{
+    background: url("image/bg-shape.svg");
+    background-size: cover;
+    background-position:center center;
+    min-height: 695px;
+}
+ 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 72px; */
+    margin-top: 35px
+}
+
+nav ul{
+    display: flex;
+}
+
+nav .brand a{
+    font-family: "Ranchers",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    color: #F58700;
+    text-decoration: none;
+}
+
+nav .brand a:hover{
+    color: #F5A000;
+    transition: 0.5s;
+}
+
+.nav-item li{
+    list-style: none;
+    margin-left: 30px;
+    margin-right: 1px;
+}
+
+.nav-item a{
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav-item a:hover{
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+    color: #FFFFFF;
+    transition: 0.2s;
+}
+
+nav .mobile{
+    display: none;
+    padding:24px;
+}
+
+.hero-content h1{
+    font-family: "Ranchers",sans-serif;
+    color: #E8A33B;
+    font-size: 64px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-left: 1px;
+}
+
+.hero-content p{
+    font-family: "Roboto",sans-serif;
+    font-size: 24px;
+    color: #F8B057;
+    width: 45%;
+    margin-top: 0px;
+    margin-bottom : 40px;
+    margin-left: 1px;
+}
+
+
+.hero-content button{
+    width: 118.06px;
+    height: 47px;
+    color: #FFFFFF;
+    background: #F58700;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 18px;
+    text-decoration: none;  
+    color: #FFFFFF;
+    border-style: none;
+    outline: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border:none;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 1px;
+}
+
+.hero-content button:active{
+    outline: none;   
+}
+
+.hero-content button:hover{
+    background: #F5A000;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+#check{
+    display: none;
+}
+
+.sidebar{
+    background-color:rgba(248,169,73,0.9);
+    position:fixed;
+    top: 0;
+    bottom:0;
+    left: -300px;
+    width: 200px;
+    transition-duration: 0.4s;
+}
+
+#check:checked ~ .sidebar{
+    left:0;
+}
+ 
+
+.sidebar ul li{
+    padding: 1rem;
+    text-align: center;
+    margin-left: -40px;
+    color: seashell;
+    font-size: 20px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.sidebar ul a{
+    text-decoration: none;
+}
+
+.sidebar ul li:hover{
+    background-color: rgba(245,135,0,0.9);
+    transition-duration: 0.3s;
+}
+
+@media(max-width : 700px){
+    nav .mobile{
+        display: block;
+    }
+
+    nav .mobile:hover{
+        cursor: pointer;
+    }
+
+    nav ul{
+        display: none;
+    }
+}
